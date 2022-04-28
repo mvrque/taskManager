@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Title in the tab</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<header>
+            <h1>Task Manager</h1>
+            <h2>Manage your tasks nicely and neatly by this task manager.</h2>
+        </header>
+        <main class="main">
+            <div class="chooseATime"> 
+                <label for="meetingTime">Choose a time and date for your task:</label>
+                <input type="datetime-local" id="meetingTime"
+                name="meetingTime" value="2022-04-26T19:30"
+                min="2022-04-26T00:00" max="2022-05-31T00:00">
+            </div>
+            <div class="addnNewTask">
+                <label for="newTask">Add new task:</label>
+                <div class="textAndButton">
+                    <input type="text" name="newTask" id="addTaskHeading" class="heading" placeholder="Task Caption">
+                    <input type="text" name="" id="addTask" class="description" placeholder="Task Description">
+                    <button>ADD</button>
+                </div>
+            </div>
+        </main>
+        <div class="tasksToDo">
+            <div id="tasksResults" class="task first"> 
+                <h5 id="taskResultDate1"></h5>
+                <h4 id="taskResultHeading1"></h4>
+                <button id="deleteFirst" class="hidden">DELETE TASK</button>
+            </div>
+            <div id="tasksResults" class="task second">
+                <h5 id="taskResultDate2"></h5>
+                <h4 id="taskResultHeading2"></h4>
+                <button id="deleteSecond" class="hidden">DELETE TASK</button>
+            </div>
+            <div id="tasksResults" class="task third">
+                <h5 id="taskResultDate3"></h5>
+                <h4 id="taskResultHeading3"></h4>
+                <button id="deleteThird" class="hidden">DELETE TASK</button>
+            </div>
+            <div id="tasksResults" class="task fourth">
+                <h5 id="taskResultDate4"></h5>
+                <h4 id="taskResultHeading4"></h4>
+                <button id="deleteFourth" class="hidden">DELETE TASK</button>
+            </div>
+            <div id="tasksResults" class="task fifth">
+                <h5 id="taskResultDate5"></h5>
+                <h4 id="taskResultHeading5"></h4>
+                <button id="deleteFifth" class="hidden">DELETE TASK</button>
+            </div>
+        </div>
+
+		<script type="text/javascript" src="javascript.js"></script>
+	</body>
+</html>

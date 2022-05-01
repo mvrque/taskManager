@@ -8,13 +8,16 @@
 		<title>Title in the tab</title>
 
 		<!-- external CSS link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
 		<header>
-            <h1>Task Manager</h1>
-            <h2>Manage your tasks nicely and neatly by this task manager.</h2>
+            <h1>TASK MANAGER</h1>
+            <h2>CHOOSE A DATE AND ADD YOUR TASK.</h2>
         </header>
         <main class="main">
             <div class="chooseATime"> 
@@ -27,7 +30,7 @@
                 <label for="newTask">Add new task:</label>
                 <div class="textAndButton">
                     <input type="text" name="newTask" id="addTaskHeading" class="heading" placeholder="Task Caption">
-                    <input type="text" name="" id="addTask" class="description" placeholder="Task Description">
+                    <input type="text" name="" id="addTaskDescription" class="description" placeholder="Task Description">
                     <button>ADD</button>
                 </div>
             </div>
@@ -36,26 +39,31 @@
             <div id="tasksResults" class="task first"> 
                 <h5 id="taskResultDate1"></h5>
                 <h4 id="taskResultHeading1"></h4>
+                <p id="taskResultDescription1"></p>
                 <button id="deleteFirst" class="hidden">DELETE TASK</button>
             </div>
             <div id="tasksResults" class="task second">
                 <h5 id="taskResultDate2"></h5>
                 <h4 id="taskResultHeading2"></h4>
+                <p id="taskResultDescription2"></p>
                 <button id="deleteSecond" class="hidden">DELETE TASK</button>
             </div>
             <div id="tasksResults" class="task third">
                 <h5 id="taskResultDate3"></h5>
                 <h4 id="taskResultHeading3"></h4>
+                <p id="taskResultDescription3"></p>
                 <button id="deleteThird" class="hidden">DELETE TASK</button>
             </div>
             <div id="tasksResults" class="task fourth">
                 <h5 id="taskResultDate4"></h5>
                 <h4 id="taskResultHeading4"></h4>
+                <p id="taskResultDescription4"></p>
                 <button id="deleteFourth" class="hidden">DELETE TASK</button>
             </div>
             <div id="tasksResults" class="task fifth">
                 <h5 id="taskResultDate5"></h5>
                 <h4 id="taskResultHeading5"></h4>
+                <p id="taskResultDescription5"></p>
                 <button id="deleteFifth" class="hidden">DELETE TASK</button>
             </div>
         </div>
@@ -63,4 +71,3 @@
 		<script type="text/javascript" src="javascript.js"></script>
 	</body>
 </html>
-

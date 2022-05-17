@@ -23,7 +23,7 @@ class CreateTask {
 
 let taskOne = new CreateTask('Go to the beach', 'I need to go to beach at 1pm.', '20.06.2022')
 
-console.log(taskOne)
+//console.log(taskOne)
 
 
 //Ui handle making a list, adding book to a list and displaying the list in the dom
@@ -32,7 +32,7 @@ class UI{
     static addTaskToAList(newTask){
         let tasks = [];
         tasks.push(newTask)
-        console.log(tasks)
+        //console.log(tasks)
     }
     static displayTaskInDom(newTask){
         const list = document.querySelector('#taskList');
@@ -88,7 +88,7 @@ document.querySelector('#taskList').addEventListener('click', (el)=>{
 
 
 
-
+//@@@@@@@@@@@@@@@@@@@@@CHANGED EVERYTHING FROM DOWN BELOW TO OOP
 
 // document.querySelector("button").addEventListener("click", addTask)
 

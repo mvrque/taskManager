@@ -46,11 +46,13 @@ class UI{
         `;
         list.appendChild(row);
     }
+    
     static deleteTask(el){
         if(el.classList.contains('delete')){
             el.parentElement.parentElement.remove()
         }
     }
+
     static clearFields(){
         document.querySelector("#dateForTask").value = "";
         document.querySelector("#taskHeading").value = "";
